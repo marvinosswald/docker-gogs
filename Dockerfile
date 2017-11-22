@@ -2,7 +2,7 @@ FROM centos:7
 
 ENTRYPOINT ["/opt/gogs/start.sh"]
 
-ENV VERSION=0.9.97
+ENV VERSION=0.11.33
 
 RUN yum install -y --setopt=tsflags=nodocs epel-release && \
     yum install -y --setopt=tsflags=nodocs nss_wrapper gettext sqlite git && \
