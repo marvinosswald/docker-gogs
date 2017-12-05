@@ -9,7 +9,7 @@ RUN yum install -y --setopt=tsflags=nodocs epel-release && \
     yum clean all
 
 RUN cd /opt && \
-    curl -L https://github.com/gogits/gogs/releases/download/v${VERSION}/linux_amd64.zip | tar xzv
+    curl -L https://github.com/gogits/gogs/releases/download/v${VERSION}/linux_amd64.tar.gz | tar xzv
 
 COPY passwd.template /tmp/passwd.template
 COPY start.sh /opt/gogs/start.sh
